@@ -29,7 +29,7 @@ function createContent(datas){
       '<div class="modal-dialog" role="document">'+
         '<div class="modal-content">'+
           '<div class="modal-header">'+
-            '<h5 class="modal-title" id="exampleModalLabel">Evoyé par 'el.nom' le '+el.date+' </h5>'+
+            '<h5 class="modal-title" id="exampleModalLabel">Evoyé par '+el.nom+' le '+el.date+' </h5>'+
             '<button class="close" type="button" data-dismiss="modal" aria-label="Close">'+
               '<span aria-hidden="true">×</span>'+
             '</button>'+
