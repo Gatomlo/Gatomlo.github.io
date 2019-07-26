@@ -10,6 +10,7 @@ Papa.parse('mails.csv', {
 })
 
 function createContent(datas){
+  console.log('ok inline')
   console.log(datas)
   datas.forEach(function (el){
     var receiveMailSend = 'Eric piperseel';
