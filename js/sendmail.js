@@ -17,7 +17,7 @@ $(document).ready(function(){
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
             '<td>'+receiceMailObject+'</td>'+
-            '<td>'+moment().locale('fr').format('LLL')+'</td>'+
+            '<td>'+moment().locale('fr').format('D-M-YY h:mm')+'</td>'+
             '</tr>'
         $('#newMailModal').modal('hide');
         setTimeout(function(){
@@ -33,7 +33,7 @@ $(document).ready(function(){
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
             '<td>'+receiceMailObject+'</td>'+
-            '<td>'+moment().locale('fr').format('D-MM-YY')+'</td>'+
+            '<td>'+moment().locale('fr').format('D-M-YY h:mm')+'</td>'+
             '</tr>'
         $('#newMailModal').modal('hide');
         setTimeout(function(){
