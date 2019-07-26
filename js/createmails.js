@@ -11,7 +11,7 @@ Papa.parse('mails.csv', {
 
 function createContent(datas){
   var count = 0
-  console.log('test content')
+  console.log('test content mod')
   console.log(datas)
   datas.forEach(function (el){
     var receiveMailSend = el.nom;
@@ -40,11 +40,11 @@ function createContent(datas){
         '</div>'+
           '<div class="modal-footer">'+
             '<a class="float-right  btn btn-primary" data-destinataire='+el.email+' data-dismiss="modal" data-toggle="modal" data-target="#newMailModal" href="#">Répondre</a>'+
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Fermer</button>
-          </div>
-        </div>
-      </div>
-    </div>
+            '<button class="btn btn-secondary" type="button" data-dismiss="modal">Fermer</button>'+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+    '</div>'
       
      $('#mailModal').prepend(newModal);
      count += 1;
