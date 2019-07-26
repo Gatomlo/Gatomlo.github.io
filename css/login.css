@@ -1,0 +1,16 @@
+#loginBox{
+  padding: 15px;
+  background-color: #5A5C69;
+  height: 30vh;
+  width: 300px;
+}
+
+
+form{
+  margin: auto;
+  text-align: center;
+}
+
+body{
+  height: 70vh;
+}
