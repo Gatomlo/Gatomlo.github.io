@@ -11,7 +11,6 @@ Papa.parse('mails.csv', {
 
 function createContent(datas){
   var count = 0
-  console.log(datas)
   datas.forEach(function (el){
     var receiveMailSend = el.nom;
     var receiceMailObject =el.objet;
