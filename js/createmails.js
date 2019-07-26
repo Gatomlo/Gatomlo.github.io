@@ -1,5 +1,5 @@
-Papa.parse('../mails.csv', {
-	// download: true,
+Papa.parse('mails.csv', {
+  download: true,
   skipEmptyLines: true,
   header: true,
   delimiter:";",
