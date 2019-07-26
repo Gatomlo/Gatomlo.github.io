@@ -10,6 +10,7 @@ Papa.parse('mails.csv', {
 })
 
 function createContent(datas){
+  console.log('test')
   var count = 0
   datas.forEach(function (el){
     var receiveMailSend = el.nom;
@@ -37,7 +38,7 @@ function createContent(datas){
             el.message+
         '</div>'+
           '<div class="modal-footer">'+
-            '<a class="float-right  btn btn-primary" data-destinataire='+el.email+' data-dismiss="modal" data-toggle="modal" data-target="#newMailModal" href="#">Répondre</a>'+
+            '<a class="float-right  btn btn-primary" data-destinataire='+el.mail+' data-dismiss="modal" data-toggle="modal" data-target="#newMailModal" href="#">Répondre</a>'+
             '<button class="btn btn-secondary" type="button" data-dismiss="modal">Fermer</button>'+
           '</div>'+
         '</div>'+
