@@ -10,16 +10,18 @@ Papa.parse('mails.csv', {
 })
 
 function createContent(datas){
-  console.log('ok inline')
+
   console.log(datas)
   datas.forEach(function (el){
     var receiveMailSend = el.nom;
     var receiceMailObject =el.objet;
+    var date = el.date;
+    var hour = el.heure;
     var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#mailModal">'+
         '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
         '<td>'+receiveMailSend+'</td>'+
         '<td>'+receiceMailObject+'</td>'+
-        '<td>'+moment().locale('fr').format('LLL')+'</td>'+
+        '<td>'+date+' '+hour+'</td>'+
         '</tr>'
       $('#mailList').prepend(newMail);
   })
