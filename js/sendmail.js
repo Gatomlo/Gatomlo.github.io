@@ -6,12 +6,12 @@ $(document).ready(function(){
     var object = $("#newMailModal #object").val();
     var mail = $("#newMailModal #mail").val();
 
-    var receiveMailSend = 'Eric piperseel';
+    var receiveMailSend = 'Pierre Piperseel';
     var receiceMailObject ='Code du coffre-fort';
     d = new Date();
     var receiveMailDate =d.toLocaleDateString();
 
-    if(dest=="eric.piperseel@profmail.education"){
+    if(dest=="pierre.piperseel@profmail.education"){
         if(mail.indexOf("373492") >= 0 || object.indexOf("373492") >= 0){
         var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#bravoMailModal">'+
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
@@ -33,7 +33,7 @@ $(document).ready(function(){
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
             '<td>'+receiceMailObject+'</td>'+
-            '<td>'+moment().locale('fr').format('LLL')+'</td>'+
+            '<td>'+moment().locale('fr').format('D-MM-YY')+'</td>'+
             '</tr>'
         $('#newMailModal').modal('hide');
         setTimeout(function(){
