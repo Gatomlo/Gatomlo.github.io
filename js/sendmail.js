@@ -6,7 +6,7 @@ $(document).ready(function(){
     var object = $("#newMailModal #object").val();
     var mail = $("#newMailModal #mail").val();
 
-    var receiveMailSend = 'Pierre Piperseel';
+    var receiveMailSend = 'Direction école';
     var receiceMailObject ='Code du coffre-fort';
     d = new Date();
     var receiveMailDate =d.toLocaleDateString();
