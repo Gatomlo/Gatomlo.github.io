@@ -6,12 +6,12 @@ $(document).ready(function(){
     var object = $("#newMailModal #object").val();
     var mail = $("#newMailModal #mail").val();
 
-    var receiveMailSend = 'Direction école';
-    var receiceMailObject ='Code du coffre-fort';
+    var receiveMailSend = 'Père Noël';
+    var receiceMailObject ='Code de la bombe';
     d = new Date();
     var receiveMailDate =d.toLocaleDateString();
 
-    if(dest=="pierre.piperseel@profmail.education"){
+    if(dest=="pere.noel@northmail.org"){
         if(mail.indexOf("373492") >= 0 || object.indexOf("373492") >= 0){
         var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#bravoMailModal">'+
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
