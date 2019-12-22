@@ -71,7 +71,7 @@ $(document).ready(function(){
   $(document).on('click','.newMail',function(){
     if($(this).data('read')==0){
       $(this).find('.fa-envelope').addClass('fa-envelope-open').removeClass('fa-envelope');
-       $(this).find('.fa-envelope').parent().removeClass('font-weight-bold');
+       $(this).find('.newMail').removeClass('font-weight-bold');
       unreadMail-=1;
       if(unreadMail <= 0){
         $('#unreadMailBadge').remove();
