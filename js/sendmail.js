@@ -29,7 +29,7 @@ $(document).ready(function(){
           $('#unreadMailBadge').html(unreadMail);
         },5000)
       }else{
-        var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#failMailModal">'+
+        var newMail ='<tr class="newMail font-weight-bold" data-read=0 data-toggle="modal" data-target="#failMailModal">'+
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
             '<td>'+receiceMailObject+'</td>'+
