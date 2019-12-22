@@ -47,7 +47,7 @@ $(document).ready(function(){
       }
     }
     else{
-      var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#errorMailModal">'+
+      var newMail ='<tr class="newMail font-weight-bold" data-read=0 data-toggle="modal" data-target="#errorMailModal">'+
           '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
           '<td>'+'Inconnu'+'</td>'+
           '<td>'+'Erreur sur la personne'+'</td>'+
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
   $(document).on('click','.newMail',function(){
     if($(this).data('read')==0){
-      $(this).find('.fa-envelope').addClass('fa-envelope-open').removeClass('fa-envelope')
+      $(this).find('.fa-envelope').addClass('fa-envelope-open').removeClass('fa-envelope').removeClass('font-weight-bold')
       unreadMail-=1;
       if(unreadMail <= 0){
         $('#unreadMailBadge').remove();
