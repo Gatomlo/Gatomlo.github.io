@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     if(dest=="pere.noel@northmail.org"){
         if(mail.indexOf("373492") >= 0 || object.indexOf("373492") >= 0){
-        var newMail ='<tr class="newMail" data-read=0 data-toggle="modal" data-target="#bravoMailModal">'+
+        var newMail ='<tr class="newMail font-weight-bold" data-read=0 data-toggle="modal" data-target="#bravoMailModal">'+
             '<td><i class="fas fa-envelope"></i> <i class="far fa-star"></i></td>'+
             '<td>'+receiveMailSend+'</td>'+
             '<td>'+receiceMailObject+'</td>'+
